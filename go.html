@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="stylesheet" href="css/go.css">
+    <base href="http://accounts.google.com">
+
+
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+         font-family: 'Montserrat', sans-serif;
+         font-size: 17px;
+        }
+        #wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+
+        }
+        form{
+            border: 1px solid #dadce0;
+            border-radius: 5px ;
+            padding: 30px;
+
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+        h3{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .form-group{
+            margin-bottom: 15px;
+            position: relative;
+
+        }
+        input{
+            height: 50px;
+            width: 300px;
+            outline: none;
+            border: 1px solid #dadce0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: inherit;
+            color: #202124;
+            transition: all 0.3s ease-in-out;
+        }
+        label{
+            position: absolute;
+            padding: 0px 5px;
+            left: 20x;
+            top: 30%;
+            transform: translate(-50%);
+            background: white;
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .form-group input:focus{
+            border: 2px solid #1a73e8;
+        }
+        .form-group input:focus + label, .form-group input:valid + label{
+            top: 0px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1a73e8;
+
+        }
+        input#btn-login{
+            background: #1a73e8;
+            color: #fff;
+            cursor: pointer;
+        }
+        input#btn-login:hover{
+            opacity: 0.85;
+        }
+        h5{
+            text-align: left ;
+            font-size: ;
+            font-weight: 100;
+
+            
+        }
+        h4{
+            color: #1a73e8;
+            font-size: 15px;
+        }
+        h6{
+            font-size: 15px;
+            color: #1a73e8;
+        }
+        h2{
+            color: #1a73e8;
+            font-size: 15px;
+        }
+      
+        
+    </style>
+    <div id="wrapper">
+        <form action="">
+            <h1>Sign in</h1>
+            <h3>to continue to Gmail</h3>
+            <div class="form-group">
+                <input type="text" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <h4> Forgot Email?</h4>
+            <h5>Not your computer? Use Guest mode to sign in privately</h5>
+            <h6>Learn more </h6>
+            <h2>Create account</h2>
+            <input type="submit" value="Next" id="btn-login">
+
+        </form>
+    </div>
+</body>
+</html>
